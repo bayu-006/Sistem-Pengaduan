@@ -1,0 +1,235 @@
+/* sidebar.css */
+
+.userSidebar{
+    width:270px;
+    height:100vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f97316,
+            #ea580c,
+            #c2410c
+        );
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    padding:24px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    box-shadow:
+        4px 0 20px rgba(0,0,0,0.18);
+
+    z-index:999;
+}
+
+/* ======================= */
+/* LOGO */
+/* ======================= */
+
+.userLogoSection{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:35px;
+}
+
+.userLogoIcon{
+
+    width:75px;
+    height:75px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,0.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:40px;
+
+    color:white;
+
+    backdrop-filter:blur(10px);
+}
+
+.userLogo{
+    color:white;
+    font-size:28px;
+    font-weight:800;
+    margin:0;
+}
+
+.userLogoSub{
+    color:#fed7aa;
+    margin-top:4px;
+    font-size:13px;
+    line-height:1.4;
+}
+
+/* ======================= */
+/* PROFILE */
+/* ======================= */
+
+.userProfileCard{
+
+    background:
+        rgba(255,255,255,0.1);
+
+    padding:16px;
+
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    margin-bottom:30px;
+
+    backdrop-filter:blur(10px);
+}
+
+.userProfileAvatar{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#ea580c;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+    font-weight:700;
+}
+
+.userProfileName{
+    color:white;
+    margin:0;
+    font-size:17px;
+}
+
+.userProfileStatus{
+    color:#dcfce7;
+    margin-top:4px;
+    font-size:13px;
+}
+
+/* ======================= */
+/* MENU */
+/* ======================= */
+
+.userMenuContainer{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.userMenuItem,
+.userMenuItemActive{
+
+    padding:15px 18px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.userMenuItem{
+    color:white;
+}
+
+.userMenuItem:hover{
+
+    background:
+        rgba(255,255,255,0.12);
+
+    transform:translateX(5px);
+}
+
+.userMenuItemActive{
+
+    background:white;
+
+    color:#ea580c;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ======================= */
+/* LOGOUT */
+/* ======================= */
+
+.userLogoutButton{
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:16px;
+
+    background:white;
+
+    color:#dc2626;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    font-size:15px;
+}
+
+.userLogoutButton:hover{
+
+    transform:translateY(-3px);
+
+    background:#fee2e2;
+}
+
+/* ======================= */
+/* RESPONSIVE */
+/* ======================= */
+
+@media(max-width:768px){
+
+    .userSidebar{
+        width:230px;
+        padding:18px;
+    }
+
+    .userLogo{
+        font-size:22px;
+    }
+
+    .userLogoIcon{
+        width:65px;
+        height:65px;
+        font-size:34px;
+    }
+
+    .userMenuItem,
+    .userMenuItemActive{
+        font-size:14px;
+        padding:13px 15px;
+    }
+
+}
